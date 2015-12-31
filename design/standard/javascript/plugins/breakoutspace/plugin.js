@@ -11,7 +11,6 @@ tinymce.PluginManager.add( 'breakoutspace', function( ed, url )
 {
     ed.on('keydown', function( e )
     {
-        console.log(e);
         // Capture CTRL+Enter
         if( ( ( e.keyCode == 13 ) || ( e.keyCode == 10 ) ) && ( e.ctrlKey == true ) )
         {
@@ -39,4 +38,4 @@ tinymce.PluginManager.add( 'breakoutspace', function( ed, url )
             }
         }
     });
-} );
+});
